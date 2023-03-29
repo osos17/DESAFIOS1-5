@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JUEGO</title>
+    <link rel="stylesheet" href="./estilos/toggleM.css">
+    <link rel="stylesheet" href="./estilos/estiloMemoria.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+<script defer src="./js/juegoM.js"></script>
+</head>
+<body>
+
+    <div class="head">
+        <h1>Juego de Memoria</h1>
+<div class="score">Score: <span>0</span></div>
+<img src="data:image/png;base64,
+iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAABJlBMVEX///8AAAB/AP//SUgnnv/++STgAHAA/oF6AP9iYmIA/nz4+Pg2Njajo6P/Pz7r6+sKCgp6enq+vr47Ozvi4uLiAGj///L++hH/OzoNm//fAGv/vLzoAHS9kP//RUTz+v/C3///s7O0df/+/Zn/pqX//Ub/amrudqjwWZuH/77O6P///bLOqv/vhrCRyf+YmJh2/7JZ/qj//Fb98Pj6x93/ycn/YmGg1P9Rrv+XOf/w//j/lZT//qf1ttC2/9VE/53Xvf+2trYeHh5ISEiGhobOzs5mZmYWFhb/4uL/MjFRUVErKyuPj4///7///+Ps2//Inf/h/+/83uvF/t9dt//17f///9bOqP/o1P/4xNqj/sv//Yv+/WjqNYdVsP+V/8L2ncLg8P+s2NymAAAG5UlEQVR4nO2daXvTRhRGJXZHDvKi7EDSAm2BgKEhDaVlUbwlllsgQFm78P//RLWONJLmzrXlgJPnPV+w0OjqHmk0M1pjGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHDS+eO6mj9ZEV5cVfOcFeHghprdCm4h11coOIovLlG85AiuXlZzuFHR8OZ5gpXfGRGuXjqj5tKvjAg3Lp9Vc+2H+TY8A0MYwhCGMAwMd56oOWIZPn6q5hXP8PaWkttVDY+WKB4yDF9dXCB4zTG8t0bwpqLh3fULatZ/Yhj+u3BRzcIzjuE5ijV6L2oNf6xseKuy4SYMYQhDGMIQhjCEIQxhCEMYwnD+DV/qrnnrDVeP0/AOddvi/DLD8O0Z6r7FNsPw4NqqmsPdiobGX3fU+IJ6Q+Pt9rttBe/eGwxDY2dDzYFR1VCH3lCH3lAHDKll+6Oaz2jRGXWt02nomiE9xzRPr2Gj0Tjlhq1Wy3X6p9kwoHmq96HmOPywtK5m6Qkjv9fUbYuFj4wIxhvqvsWjTY2h69P3a6mqyMO7aj5w0jNe31LzlBXB2LunZI8UDAw9z9sf+/twOBw2arz1nSQytTRg9K3zmT0tr+7jjZ394N/64FvnA0CRVi3ETqY74eTA7zmatQItMY51kvJuOGMUL29JxZ2y/wxoZjMYZ+e4Uhppu9eUlouSiNEdWItRC5PEihucoG/0zAKL/haJftXj8nY8JzZsSsXjZssqDZTQl+fIgXrJdpTXOlQFIwzNeOPFWg3fsE4Zmp2ofE1KrF8sX25oijqTy9bsypvKkSK0o5k9ZTDKMBrRjE2uYbRuV17JML+ArTIUvVI+23irJIZeODWQDPPbUdPFCcOgOid1lGPYlnK3S7ON1l1mmNSZQrZxKFHdg7oirbPs8CHrqTA0/WakPYFhMDEQE3Z5tqFIqWG810tWUpMM/bpiNSTDcXERsp6mhmbmN8fQtLO/S7etGVb+csOaKttwq6SG3czvdraeFYLpDdM9wjMcZZR8w06pSFNlGNSZ0mzDrZJplDM/A8Nu6SIuyzADyzCLne8pErpKw87kwXzDtMrmg83EcIqkZm5YaK+TYNMaNm0nxeIk1Y/KxlOpYSeO5BYNo1n2oBhMadi288GmNezlymsNO3LB1FA06YO8YdyRixrIMUyGjbm1TmFYa7kpjt7QE5FrKsNkn4pg6SCXbdgrBpvWUILR0qTji57KsJM3FBeI+mzDtI9vfG3DrogspnOGyRGaGor+ehpDEYw29EQvM+AZ1uTyHMPhfkSyJMOwK3IYVDZMNmyzxTNMzppGhaSUhnkYtbSbDAQXOznDtIdn1tL95OCID3atoTCd3jANtpjQywVrx+2uFx/UqeFALMM1tKJRd4traEVNZae42bmGwdms7qBux8s6BcM8HMOgng4MvqEdrXFqwz7LMCwyNmZiGIzz7QkMg5LO9IZhh8Yw9OtK0MXOxNAID1++odENsswbpv0haRgNDDiGdri3Z2OYuS6RGnY7KeO+ZGhbJYZ1EXlAGfbZhlFaszE0ygwV41L1MMSVZ5QbNqVgtKFxzIZNKwtnoGVHRfcJw2TwOheGEouTDyWzozZRYmidUkND/O881VK+YfFaYkAta5gaSS0NMaZRGTbdycc0lQ2VFw0z5xbiYle0Ql2FUBtOPi6dgWFpnQu0rMJPM66nunMLteHE5xYzMcxcIE4IU8yeH7piVmbUdnIMi/XUyRuKWzn+6cwJNMzsoex6JUNbzOx9VcOhJU+b0xmmeygkHsHJVzHSreBMbFgX1+MmMQyfVEifS3TD6bY/Parn8QLD8ImGdJ/3o+k4SdvLFk/uAUdTSfNXS+aPcgtng/XCQOntiLEXLWFYbSmYvyOSzAAAYK65Tzwd+oAV4RPx0srnZU6Eo7+Jh1w5T4BSfCSff73FiHBnhXot5xMniSvEY7zrS0fVDO+Thpyd+IkyPP8zI8LOErELLwSfHznxhtST2DCEIQxhCEMYzsDwYFcN01D9pbGtLyzDnedq3lY13D0k3sE9azEMN89Rr+xsMQzpN4mfVzT85RrxHvXqBsNwb4166+ofhqH2bfDjM7z8XWXDRwxD7Rv9MIQhDGEIQxjCEIYwhCEM58CQ/u6B1pD+kvN9hiF9Vf8z54vg1FX9C5qr+lpD4wFh+Owxw9D4rFZcubnMMXx4heA/UpBhaDxWE8zWGxrLaoLZnO/W76ihBTmGGhiGGqp/mR+GMIQhDGEIw2M0XJ0DQ9Zf/aK4cUj9zbMDRoQv1G2LtT1GhPeV/3IbycZvajiCvqL6S2P3tlgR3n+vZruCGwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACg+R+/EIu7evBjNQAAAABJRU5ErkJggg==" hspace="0" vspace="0" style="float: right;" width="300"  height="250" alt="imagen1">
+</div>
+
+<div class="container">
+    <div class="cell">
+        <div class="front" data-index="1"><img src="./imagenes/1.jpg" alt=""></div>
+        <div class="back"></div>
+        </div>
+    <div class="cell">
+            <div class="front" data-index="1"><img src="./imagenes/2.jpg" alt=""></div>
+            <div class="back"></div>
+            </div>
+    <div class="cell">
+        <div class="front" data-index="2"><img src="./imagenes/3.jpg"alt=""></div>
+        <div class="back"></div>
+        </div>
+    <div class="cell">
+            <div class="front" data-index="2"><img src="./imagenes/4.jpg" alt=""></div>
+            <div class="back"></div>
+            </div>
+     <div class="cell">
+            <div class="front" data-index="3"><img src="./imagenes/5.jpg" alt=""></div>
+            <div class="back"></div>
+            </div>
+    <div class="cell">
+            <div class="front" data-index="3"><img src="./imagenes/6.jpg" alt=""></div>
+             <div class="back"></div>
+             </div>
+   <div class="cell">
+            <div class="front" data-index="4"><img src="./imagenes/7.jpg"alt=""></div>
+            <div class="back"></div>
+            </div>
+    <div class="cell">
+            <div class="front" data-index="4"><img src="./imagenes/8.jpg" alt=""></div>
+            <div class="back"></div>
+            </div>
+<div class="cell">
+            <div class="front" data-index="5"><img src="./imagenes/9.png" alt=""></div>
+            <div class="back"></div>
+            </div>
+ <div class="cell">
+            <div class="front" data-index="5"><img src="./imagenes/10.png"alt=""></div>
+            <div class="back"></div>
+            </div>
+  <div class="cell">
+            <div class="front" data-index="6"><img src="./imagenes/11.jpg"alt=""></div>
+            <div class="back"></div>
+          </div>
+ <div class="cell">
+            <div class="front" data-index="6"><img src="./imagenes/12.jpg" alt=""></div>
+            <div class="back"></div>
+            </div>
+
+            </div>
+    </div>
+</div>
+
+<div id="container">
+    <div class="toggle"><i class="fa-solid fa-moon"></i></div>
+    </div>
+
+    <script src="./js/toggle.js"></script>
+</body>
+</html>

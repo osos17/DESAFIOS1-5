@@ -1,0 +1,39 @@
+h1{
+    background-color: rgb(216, 103, 103);
+}
+
+p{
+    background-color: rgba(255, 208, 0, 0.473);
+    font-size:30px;
+  }
+
+
+    h1 {
+        font-family: Helvetica, Geneva, Arial,
+              SunSans-Regular, sans-serif 
+            }
+
+            body {
+                padding-left: 0em;
+                font-family: Georgia, "Times New Roman",
+                      Times, serif;
+                color: rgb(255, 231, 231);
+                background-color: rgb(241, 218, 218) 
+            }
+            
+            label{
+                font-size:20px; 
+            } 
+
+            input{
+                font-size:20px;
+            }
+
+            button{
+                font-size:15px;
+            }
+  
+            .Alinear_Flex{
+                display: flex;
+                justify-content: center;
+            }

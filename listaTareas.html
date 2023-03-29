@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ListaTareas</title>
+    <title>LISTA DE TAREAS</title>
+    <center> <img src="https://static.vecteezy.com/system/resources/previews/012/665/130/non_2x/hand-drawn-notebook-and-pencil-illustration-png.png" 
+    width="150"  height="190" name "imagen1" ALT="land"/></center>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;400;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./estilos/estiloTareas.css">
+    <script src="./js/tareas.js" type="text/javascript" defer></script>
+    <link rel="stylesheet" href="./estilos/toggle.css">
+</head>
+<body>
+    
+    <div class="list roundBorder">
+        <div class="date">
+            <div class="dateRight">
+                <div id="dateNumber"></div>
+                <div>
+                    <div id="dateMonth"></div>
+                    <div id="dateYear"></div>
+                </div>
+            </div>
+            <div id="dateText"></div>
+        </div>
+        
+        <form onsubmit="addNewTask(event)" >
+           
+            <input type="text" name="taskText" autocomplete="off" placeholder="Nueva tarea" class="roundBorder">
+            <button type="submit" class="addTaskButton">+</button>
+            
+        </form>
+        <div id="tasksContainer"></div>
+    </div>
+    <title>LISTA DE TAREAS</title>
+    <div id="container">
+        <div class="toggle"><i class="fa-solid fa-moon"></i></div>
+        </div>
+
+        <script src="./js/toggle.js"></script>
+</body>
+</html>

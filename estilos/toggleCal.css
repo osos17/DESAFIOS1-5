@@ -1,0 +1,35 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+
+}
+body{
+    background-color: #f8f8f8;
+}
+.container {
+background-color: #f8f8f8;
+
+box-shadow: inset 4px 4px 6px #cecece,
+inset -4px -4px 6px #fefefe;
+
+}
+.toggle{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40px;
+    height: 40px;
+    transform: scale(.7);
+    background-color: linear-grandient(145deg,#d8d8d8,#ffff);
+    box-shadow: 3px 3px 8px #c4c4c4,
+             -3px -3px 8px #a7a2a2;
+
+}
+#container.active.toggle {
+    left:40px;
+
+}
+body.active {
+background-color: rgb(49, 46, 46);
+}

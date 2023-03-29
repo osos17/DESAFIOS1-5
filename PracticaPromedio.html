@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" 
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" 
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <title> CALIFICACIONES DEL ALUMNO</title>
+        <link href="./estilos/estiloprom.css" rel="stylesheet">
+        <script src="./js/calificaciones.js"></script>
+        <link rel="stylesheet" href="./estilos/toggle.css">
+
+    </head>
+    <body>
+        <h1><center>
+            CALIFICACIONES DEL ALUMNO
+        </h1></center>
+        <form><center>
+            <label for="calificacion1">CALIFICACION 1:</label>
+            <input type="number" id="calificacion1" name="calificacion1"><br>
+            <label for="calificacion2">CALIFICACION 2:</label>
+            <input type="number" id="calificacion2" name="calificacion2"><br>
+            <label for="calificacion3">CALIFICACION 3:</label>
+            <input type="number" id="calificacion3" name="calificacion3"><br>
+            <input type="button" value="CALCULAR EL PROMEDIO" onclick="calcularPromedio()">
+        </center>
+        </form>
+        <p id="resultado"></p>
+
+       <div id="container">
+        <div class="toggle"><i class="fa-solid fa-moon"></i></div>
+        </div>
+
+        <script src="./js/toggle.js"></script>
+
+        <div class="Alinear_Flex">
+            <img src="./imagenes/imagen3.jpg" hspace="0" vspace="0" style="float: right;" width="300"  height="250" alt="imagen1">
+       </div>
+    </body>
+</html>
